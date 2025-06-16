@@ -19,36 +19,37 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "Buy Construction Equipment Online | MaxBeton",
+    default: "Electric Wheelbarrow Dumpers Manufacturer in India | MaxBeton",
     template: "%s | MaxBeton",
   },
   description:
-    "Buy construction equipment online from MaxBeton—India’s trusted source for high-performance machinery. Shop excavators, loaders & more. Nationwide delivery.",
+    "MaxBeton is India’s leading manufacturer of electric wheelbarrow dumpers. Discover eco-friendly, powerful, and efficient solutions for construction and industrial needs. Delivered across India.",
   keywords: [
-    "buy construction equipment online",
-    "construction machinery for sale",
-    "online equipment store",
-    "excavators for sale",
-    "loaders for sale",
-    "construction equipment India",
-    "MaxBeton equipment",
-    "heavy machinery purchase",
-    "site equipment shop",
-    "infrastructure machinery online",
+    "electric wheelbarrow dumper",
+    "wheelbarrow dumper manufacturer India",
+    "electric construction wheelbarrow",
+    "battery-powered dumper",
+    "electric dump cart India",
+    "MaxBeton wheelbarrow",
+    "eco-friendly construction equipment",
+    "electric site dumper",
+    "electric mini dumper India",
+    "MaxBeton machinery",
+    "MaxBeton",
   ],
   metadataBase: new URL("https://www.maxbeton.in"),
   openGraph: {
-    title: "Buy Construction Equipment Online | MaxBeton",
+    title: "Electric Wheelbarrow Dumpers Manufacturer in India | MaxBeton",
     description:
-      "Explore MaxBeton's construction equipment online. Trusted by 1000+ firms across India. Fast delivery & expert support—quality machinery at your fingertips.",
-    url: "https://www.maxbeton.in",
+      "Explore MaxBeton’s range of electric wheelbarrow dumpers — engineered for performance, durability, and eco-efficiency. Proudly made in India with nationwide delivery.",
+    url: "https://www.maxbeton.in/products",
     siteName: "MaxBeton",
     images: [
       {
         url: "/Home-Image.jpeg",
         width: 1200,
         height: 630,
-        alt: "MaxBeton Construction Equipment for Sale",
+        alt: "Electric Wheelbarrow Dumper by MaxBeton",
       },
     ],
     locale: "en_IN",
@@ -56,9 +57,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Buy Construction Equipment Online | MaxBeton",
+    title: "Electric Wheelbarrow Dumpers Manufacturer in India | MaxBeton",
     description:
-      "Shop construction machinery online with MaxBeton — top-quality equipment, secure purchase, and fast delivery across India.",
+      "MaxBeton manufactures advanced electric wheelbarrow dumpers — perfect for modern construction and industrial projects across India.",
   },
   authors: [{ name: "MaxBeton Team", url: "https://maxbeton.in/about" }],
   creator: "MaxBeton Team",
@@ -72,9 +73,10 @@ export const metadata = {
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
-    },
-  },
+    },
+  },
 };
+
 
 
 export default function RootLayout({ children }) {

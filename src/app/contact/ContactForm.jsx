@@ -164,7 +164,7 @@ const ContactPage = () => {
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="MaxBeton Location"
+              title="MaxBeton Office Location"
             ></iframe>
           </motion.div>
         </div>

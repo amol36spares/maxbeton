@@ -10,6 +10,7 @@ export const metadata = {
     "buy construction machinery",
     "rental equipment support",
     "heavy equipment sales help",
+    "looking for partners and distributors pan India for MaxBeton equipment",
     "MaxBeton customer service"
   ],
   openGraph: {

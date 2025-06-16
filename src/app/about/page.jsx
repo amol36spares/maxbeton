@@ -8,7 +8,10 @@ export const metadata = {
   keywords: [
     "About MaxBeton",
     "construction equipment company",
-    "heavy machinery supplier India",
+    "manufacturer of electric wheel barrows and wheel loaders",
+    "manufacturer of remote controlled rovers used on construction sites and warehouses",
+    "makers of diesel driven self loading small dumpers, electric self loading dumpers ",
+    "India based manufacturers of electric and diesel driven ride on dumpers",
     "trusted construction partner",
     "MaxBeton mission and values",
     "equipment supplier team"
