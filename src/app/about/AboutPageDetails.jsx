@@ -32,7 +32,7 @@ const AboutPageDetails = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-xl text-gray-600 mb-8"
             >
-              We are a bunch of crazy ones and misfits who want to change the material handling on the work sites and industries through super efficient equipment.
+              We are a bunch of crazy ones and misfits who want to change the material handling on the work sites and industries through super efficient equipment. We are striving to provide you with the best electric and engine-based efficient small equipment.
             </motion.p>
           </div>
         </div>
