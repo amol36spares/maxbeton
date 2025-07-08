@@ -3,7 +3,7 @@ import { getProduct } from "./api";
 
 export async function generateMetadata({ params }) {
   try {
-    const { id } = await params;\
+    const { id } = await params;
     const detail = await getProduct(id);
     return {
       title:
