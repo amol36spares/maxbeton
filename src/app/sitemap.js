@@ -31,37 +31,17 @@ export default async function Sitemap() {
       changeFrequency: "daily",
     },
     {
-      url: `${baseUrl}/course-catalogue`,
+      url: `${baseUrl}/about`,
       lastModified: new Date(),
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/contact-us`,
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/terms-and-condition`,
-      lastModified: new Date(),
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/terms-and-condition?page=terms-and-condition`,
-      lastModified: new Date(),
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/terms-and-condition?page=privacy-policy`,
-      lastModified: new Date(),
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/terms-and-condition?page=refund-policy`,
-      lastModified: new Date(),
-      priority: 0.3,
-    },
-    {
-      url: `${baseUrl}/terms-and-condition??page=disclaimer`,
+      url: `${baseUrl}/products`,
       lastModified: new Date(),
       priority: 0.3,
     },
