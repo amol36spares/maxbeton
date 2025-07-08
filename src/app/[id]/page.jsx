@@ -3,8 +3,7 @@ import { getProduct } from "./api";
 
 export async function generateMetadata({ params }) {
   try {
-    const { id } = await params;
-    console.log(id);
+    const { id } = await params;\
     const detail = await getProduct(id);
     return {
       title:
@@ -55,9 +54,7 @@ export async function generateMetadata({ params }) {
   }
 }
 
-export default async function productDetail({ params }) {
-  const { id } = await params;
-  console.log(id);
+export default async function productDetail() {
   return (
     <div>
       <ProductDetailPage />

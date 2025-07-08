@@ -1,33 +1,33 @@
-import React, { useState } from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogClose,
-} from '@/components/ui/dialog';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { useToast } from '@/components/ui/use-toast';
+} from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { useToast } from "@/components/ui/use-toast";
+import { useState } from "react";
 
 const EnquiryModal = ({ productName, children }) => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
+    name: "",
+    company: "",
+    email: "",
+    phone: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e) => {
@@ -35,7 +35,6 @@ const EnquiryModal = ({ productName, children }) => {
     setIsSubmitting(true);
 
     // Simulate sending data (replace with actual API call later)
-    console.log('Enquiry Data:', { product: productName, ...formData });
 
     setTimeout(() => {
       setIsSubmitting(false);
@@ -47,15 +46,13 @@ const EnquiryModal = ({ productName, children }) => {
       });
 
       // Reset form
-      setFormData({ name: '', company: '', email: '', phone: '' });
+      setFormData({ name: "", company: "", email: "", phone: "" });
     }, 1500);
   };
 
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogTrigger asChild>
-        {children}
-      </DialogTrigger>
+      <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-[425px] border-none bg-white">
         <DialogHeader>
           <DialogTitle>Enquire about {productName}</DialogTitle>
@@ -120,10 +117,20 @@ const EnquiryModal = ({ productName, children }) => {
           </div>
           <DialogFooter>
             <DialogClose asChild>
-              <Button type="button" className="cursor-pointer" variant="secondary">Cancel</Button>
+              <Button
+                type="button"
+                className="cursor-pointer"
+                variant="secondary"
+              >
+                Cancel
+              </Button>
             </DialogClose>
-            <Button type="submit" disabled={isSubmitting} className="text-white cursor-pointer">
-              {isSubmitting ? 'Sending...' : 'Send Enquiry'}
+            <Button
+              type="submit"
+              disabled={isSubmitting}
+              className="text-white cursor-pointer"
+            >
+              {isSubmitting ? "Sending..." : "Send Enquiry"}
             </Button>
           </DialogFooter>
         </form>

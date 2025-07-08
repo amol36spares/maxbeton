@@ -5,13 +5,14 @@ export async function POST(req) {
   try {
     const body = await req.json();
     const { productData } = body;
-    console.log(productData);
 
     await connectToDb();
 
     await productModel.create(productData);
-    return Response.json({ message: "Product Added Successfully" }, { status: 200 });
-
+    return Response.json(
+      { message: "Product Added Successfully" },
+      { status: 200 }
+    );
   } catch (error) {
     console.error("Error adding product:", error);
 
