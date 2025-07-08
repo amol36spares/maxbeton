@@ -15,7 +15,7 @@ export default async function Sitemap() {
   const sitemap = products?.reduce((acc, product) => {
     if (product?._id) {
       acc.push({
-        url: `${baseUrl}/products/${product._id}`,
+        url: `${baseUrl}/${product._id}`,
         lastModified: new Date().toISOString(),
         priority: 1.0, // Highest priority for product pages
         changeFrequency: "weekly",
